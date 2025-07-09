@@ -1,0 +1,554 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      a {text-decoration: none; 
+        color: black;}
+        .Dammy:hover{ background-color: aqua;}
+
+      .p2 {
+        color: green;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          width: 100vw;
+          height: 15px;
+          display: flex;
+          flex-direction: column;
+        }
+        .header .social div {
+          display: none;
+        }
+        .header .leftop h4 {
+          display: none;
+        }
+        .header .middletext div h5 {
+          display: none;
+        }
+        .header .middletext div img {
+          width: 30%;
+          margin-top: 12px;
+          height: 100%;
+          margin-bottom: -500px;
+        }
+        body {
+          border: 2px solid red;
+        }
+
+        section {
+          width: 90vw;
+        }
+        .textlogo{width: 100%; border:
+           solid red 1px;
+        }
+        div .textimg{ width: 50%; border: 
+          solid red 1px;}
+
+        .textlogo2{ width: 100%; border: 
+          solid red 1px;}
+
+          div.textimg2{ width: 50%; }
+
+          .footer{width: 95%; 
+            margin: auto; 
+            display: flex; flex-direction: column;
+             border: solid rgb(0, 255, 85) 1px;}
+
+        
+
+          .footertext{width: 100%; height: 70%; border: solid rgb(174, 0, 255) 1px;}
+
+
+
+        .news h4 {
+          display: none;
+        }
+
+        .about {
+          min-width: 90%;
+          margin: auto;
+          text-align: center;
+          border: solid red 1px;
+          font-size: 24px;
+        }
+
+        .about h1 {
+          width: 100%;
+          border: solid red 1px;
+        }
+
+        header {
+          width: 90%;
+          margin: auto;
+        }
+
+        main {
+          width: 100%;
+        }
+
+        a {
+          color: black;
+        }
+
+
+        .anchor{width: 100%; margin: auto;}
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--This is the starting style for the header-->
+
+    <header
+      style="
+        display: flex;
+        flex-direction: row;
+        height: 25%;
+        width: 96%;
+        gap: 30px;
+        margin: auto;
+      "
+      class="header"
+    >
+      <!--This is the ending point for the header -->
+
+      <!--This is the starting of the style for this section that contain Listen Newsletter and show -->
+      <section
+        style="display: flex; flex-direction: row; gap: 5%"
+        class="leftop"
+      >
+        <h4>Listen</h4>
+        <h4>Newsletters</h4>
+
+        <select
+          name="option"
+          id=""
+          style="height: 20%; width: 100%; margin-top: 5%; border: none"
+        >
+          <option value="">Shows</option>
+          <option value="">Marketplace Tech</option>
+          <option value="" style="width: 100%; padding: 10px">
+            Marketplace Morning Report
+          </option>
+          <option value="">Make Me Smart</option>
+        </select>
+      </section>
+      <!--This is the ending of the style for this section that contain Listen Newsletter and show -->
+
+      <!--This is the end of the section for Marketplace logo and text -->
+
+      <section
+        style="display: flex; flex-direction: column; text-align: center"
+        class="middletext"
+      >
+        <div style="margin-left: 40%; width: 100%">
+          <img src="assets/Market place.jpg" alt="" style="height: 35px" />
+
+          <h5>Daily business news and economics stories from marketplace</h5>
+        </div>
+      </section>
+      <!--This is the end of the section for Marketplace logo and text -->
+
+      <!--This is the starting section of the section for facebook logo and the rest with search botton &Menue text -->
+      <section
+        style="
+          height: 65%;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          margin-right: 30px;
+        "
+        class="social"
+      >
+        <div>
+          <img src="assets/facebook logo.jpg" alt="" style="height: 40%" />
+        </div>
+
+        <div class="ig">
+          <img src="assets/instagram logp.jpg" alt="" style="height: 40%" />
+        </div>
+
+        <div><img src="assets/tiktok.jpg" alt="" style="height: 40%" /></div>
+
+        <div><img src="assets/youtube.jpg" alt="" style="height: 40%" /></div>
+
+        <button
+          style="
+            height: 30px;
+            border-radius: 30px;
+            padding: 5px 15px;
+            width: 200%;
+            margin: 1px 5px;
+            border: 1px solid rgb(202, 241, 202);
+          "
+          class="Donate"
+        >
+          Donate
+        </button>
+
+        <div>
+          <img src="assets/icons8-search-50.png" alt="" style="height: 30%" />
+        </div>
+
+        <div>
+          <img
+            src="assets/8666802_menu_navigation_icon.jpg"
+            alt=""
+            style="height: 30%"
+          />
+        </div>
+
+        <!--This is the starting section of the section for facebook logo and the rest with search botton &Menue text -->
+      </section>
+    </header>
+
+    <!--This is the div for the Trump's Second and co -->
+    <div
+      style="
+        display: flex;
+        -direction: row;
+        height: 10%;
+        margin-left: 27%;
+        margin-top: -6%;
+        gap: 10px;
+      "
+      class="news"
+    >
+      <h4 style="background-color: rgb(210, 250, 250)">Trump's Second Term</h4>
+      <h4 style="background-color: rgb(123, 250, 250)">The Age of Work</h4>
+      <h4 style="background-color: rgb(121, 190, 250)">Los Angeles Wildlife</h4>
+      <h4 style="background-color: rgb(204, 216, 212)">I've Always Wondered</h4>
+    </div>
+
+    <section
+      style="
+        height: 15%;
+        width: 100%;
+        background-color: rgb(9, 46, 46);
+        padding: 20px 0px;
+        margin: auto;
+      "
+    >
+      <div
+        style="
+          height: 70%;
+          width: 20%;
+          color: white;
+          background-color: rgb(4, 22, 22);
+          box-shadow: 8px 2px 7px 0px rgb(224, 224, 224);
+          text-align: center;
+          margin: auto;
+          border-top: 2px solid white;
+          margin-top: 5px;
+          border-left: 2px solid white;
+          border-radius: 10px;
+          padding-bottom: 20px;
+        "
+        class="about"
+      >
+        <h1 style="font-size: 35px; font-weight: 800">About Us</h1>
+      </div>
+    </section>
+
+    <main style="width: 50%; margin: auto; font-size: 24px; color: #575757">
+      <div>
+        <h1 style="font-weight: 300%; color: black">Who we are</h1>
+
+        <p>
+          Marketplace is a public media outlet that produces broadcast shows,
+          podcasts, digital reporting and more.
+        </p>
+
+        <p class="p2">
+          The Marketplace broadcast portfolio is heard by more than 10 million
+          listeners each week on more than 800 radio stations nationwide. We
+          also reach more than 1.6 million listeners across our podcasts.
+        </p>
+
+        <p>
+          We’re committed to covering business and the economy in ways that
+          everyone can understand, not just those on Wall Street. Our mission is
+          to raise the economic intelligence of the country. To do that, we
+          share economic perspectives and realities relevant to all communities
+          — especially those who often go unrepresented in financial news​.
+        </p>
+
+        <p>
+          Marketplace has won numerous awards for economic coverage, including
+          the George Foster Peabody Award, the Gerald Loeb Award, Webby Award,
+          SABEW Award, National Headliner Award and the Gracie Award.
+        </p>
+
+        <p>
+          Marketplace was founded in 1989. Produced on the West Coast, we also
+          focus on geographic diversity in our reporting. We have bureaus in New
+          York and Washington, D.C., and journalists and correspondents
+          throughout the country and on three continents.
+        </p>
+
+        <p>
+          As a nonprofit news organization, Marketplace depends on funding from
+          foundations, corporate underwriters, public radio stations and
+          listener support.
+        </p>
+      </div>
+
+      <!--The end of the first text and the paragraph -->
+
+      <div style="width: 100%; height: 1px">
+        <h1><hr /></h1>
+      </div>
+
+      <!--The end of the first line -->
+
+      <div style="text-align: center">
+        <h1 style="color: black">Let’s do the numbers</h1>
+      </div>
+      <!--The end of the first header before starting a line text -->
+
+      <div><h1>11.7 million</h1></div>
+      <!--The end of header 11.7 million  -->
+
+      <div>
+        <p>
+          The average number of weekly listeners who hear Marketplace
+          programming on their public radio stations.
+        </p>
+      </div>
+
+      <div><h1>More than 800</h1></div>
+
+      <div>
+        <p>
+          The number of U.S. radio stations that distribute broadcast shows
+          produced by Marketplace.
+        </p>
+      </div>
+
+      <div><h1>34</h1></div>
+
+      <div>
+        <p>The number of years people have enjoyed listening to Marketplace.</p>
+      </div>
+
+      <div style="width: 100%; height: 1px">
+        <h1><hr /></h1>
+      </div>
+
+      <div><h1>Programs</h1></div>
+
+      <!--The start of the section for the logos as many-->
+
+      <section
+        style="
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          gap: 0%;
+          height: 45%;
+        "
+      >
+        <div style="width: 90%; object-fit: cover">
+          <img
+            src="assets/green new.webp"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+
+        <div style="width: 90%; object-fit: cover">
+          <img
+            src="assets/new orange.webp"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+
+        <div style="width: 90%; object-fit: cover">
+          <img
+            src="assets/purple.jpg"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+      </section>
+      <!--The End of the section for the logos as many-->
+
+
+
+      <!--The start of the section for the logos and images as many-->
+      <section
+        style="display: flex; flex-direction: row; gap: 2%; margin-top: 8px"
+
+        class="textlogo"
+      >
+        <div style="width: 45%; object-fit: cover"
+        class="textimg"
+        >
+          <img
+            src="assets/FI-PodcastCover-3k green.png"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+
+        <div style="width: 45%; object-fit: cover"
+        class="textimg"
+        >
+          <img
+            src="assets/HWS_Cover_3000x3000 black.jpg"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+
+        <div style="width: 45%; object-fit: cover"
+        class="textimg"
+        >
+          <img
+            src="assets/Make_Me_Smart_Cover_3k blue.jpg"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+      </section>
+      <!--The end of the section for the logos and images as many-->
+
+
+
+      <!--The start of the section for the logos with the text and images as many-->
+
+      <section
+        style="display: flex; flex-direction: row; gap: 2%; margin-top: 8px"
+
+        class="textlogo2"
+      >
+        <div style="width: 45%; object-fit: cover"
+        class="textimg2"
+        >
+          <img
+            src="assets/TIU_CoverArt_3k green text.jpg"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+
+        <div style="width: 45%; object-fit: cover"
+        class="textimg2"
+        >
+          <img
+            src="assets/MKTP-0016-21-Million-Bazillion_Greenlight_Logo-R blue text.jpg"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+
+        <div style="width: 45%; object-fit: cover"
+        class="textimg2"
+        >
+          <img
+            src="assets/The_Uncertain_Hour_3000x3000 black text.webp"
+            alt=""
+            style="width: 100%; height: 100%"
+          />
+        </div>
+      </section>
+      <div><h1>People</h1></div>
+      <div>
+        <p>
+          Our team of more than 90 reporters, editors, producers, hosts and
+          other staffers are in the studios, out in the field and behind the
+          scenes to help bring you the economic news you crave. Interested in
+          joining our team? Check out our careers page.
+        </p>
+      </div>
+
+      <div><h1>Connect with us</h1></div>
+
+      <section
+        style="
+          display: flex;
+          flex-direction: row;
+          width: 70%;
+          gap: 3%;
+          height: 50px;
+        "
+      >
+        <button
+          style="
+            border-radius: 40px;
+            width: 27%;
+            padding: 10px 20px;
+            border: solid rgba(26, 25, 25, 0.247);
+            background-color: rgb(13, 13, 48);
+            color: white;
+          "
+        >
+          Facebook
+        </button>
+
+        <button
+          style="
+            border-radius: 40px;
+            width: 27%;
+            padding: 10px 20px;
+            border: solid rgba(26, 25, 25, 0.247);
+            background-color: rgb(13, 13, 48);
+            color: white;
+          "
+        >
+          Instagram
+        </button>
+
+        <button
+          style="
+            border-radius: 40px;
+            width: 27%;
+            padding: 10px 20px;
+            border: solid rgba(26, 25, 25, 0.247);
+            background-color: rgb(13, 13, 48);
+            color: white;
+          "
+        >
+          YouTube
+        </button>
+
+        <button
+          style="
+            border-radius: 40px;
+            width: 24%;
+            padding: 10px 20px;
+            border: solid rgba(26, 25, 25, 0.247);
+            background-color: rgb(13, 13, 48);
+            color: white;
+          "
+        >
+          Email
+        </button>
+      </section>
+
+      <div><h1>Support us</h1></div>
+
+      <div>
+        <p>
+          Marketplace is a listener-supported public service journalism outlet.
+          Find out how you can support us as at the individual, corporate and
+          foundation level. Or, show off your love of public radio by sporting
+          some Marketplace merch!
+        </p>
+      </div>
+    </main>
+
+
+
+
+
+
+
+  </body>
+</html>

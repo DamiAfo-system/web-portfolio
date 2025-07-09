@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div style="width: 25%; gap: 5px; 
+height: 70%; margin: auto;">
+<form action="" style="display: flex;flex-direction: column;">
+
+
+
+<div> <span id="error" > Amount:</span></div> 
+<input type="number" id="amount" placeholder="Amount" style="height: 40%;">
+
+
+
+<div> <span id="wrong"> Name:</span></div> 
+<input type="text" id="name" placeholder="name" style="height: 40%;" >
+
+
+
+<button style="height: 40%;" type="" onclick="accountCheck();">
+send
+</button>
+
+
+</form>
+
+</div>
+
+
+<script>
+  function accountCheck(){   /* Function*/
+
+
+    let WithdrawAmount = document.getElementById('amount').value;   /* variable*/
+
+    let acoountBalance = 4000;
+
+  if(   WithdrawAmount > acoountBalance)  {  /*  Condition statement */
+
+
+    document.getElementById('error').innerHTML = "insufficient fund";  /* parameter for the condition statment*/
+
+  }
+
+    let name = document.getElementById('name').value;
+
+
+    if ( name == '')   
+    {
+
+      document.getElementById('wrong').innerHTML = "fill name fild";
+
+      document.getElementById('wrong').style.color = "red";
+
+    }   
+
+
+
+
+
+
+  }
+
+
+
+
+</script>
+</body>
+</html>

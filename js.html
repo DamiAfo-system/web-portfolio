@@ -1,0 +1,336 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    
+<div id="main">   Blessings upon my Life 
+
+</div>
+<p id="upon"></p>
+
+<p id="life"> </p>
+
+<div id="Dami"> </div>
+
+<div id="dami"></div>
+<div id="my"> </div>
+
+<!--Side bar-->
+
+<div   class="sidebar"   id="navbar"  style="width: 50; height: 16%;
+margin: auto; background-color: rgb(199, 250, 250); display: none; z-index: 5;">
+
+  <button   class="item"  onclick="close()" style="height: 20%; border-radius: 20px;">   
+    Close&Times; </button>
+ <a href=""> Home</a>
+ <a href=""> Project</a>
+ <a href=""> About</a>
+ <a href=""> Contact</a>
+
+</div>
+
+<!--Page content-->
+
+<div class="overlay"  onclick="close()" style="cursor: pointer;"  id="mynavbar"></div>
+
+
+<div style="display: flex; flex-direction: column; margin: auto;width: 50%;">
+  <button class="button" onclick="open()"  style="height: 10%; border-radius: 20px; width: 10%;"> Menu  </button>
+
+  <a href=""> link 1</a>
+ <a href=""> link 2</a>
+ <a href=""> link 3</a>
+ <a href=""> link 4</a>
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+// script for the side bar
+
+
+function open() {
+  document.getElementById("navbar").style.display="block";
+  document.getElementById("overlay").style.display="block";
+
+}
+
+
+
+function close() {
+  document.getElementById("navbar").style.display="none";
+  document.getElementById("overlay").style.display="none";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('main').innerHTML="Next Text";
+
+document.getElementById('main').style.color = "red";
+
+let Dammy = 2;
+let Dami = 4;
+let Champ = Dammy * Dami;
+
+document.getElementById('upon').innerHTML= Champ;
+
+let name = "John";
+let age = 30;
+
+
+
+document.getElementById('life').innerHTML=  `My name is ${name} and I'm ${age} old and from Mokola Ibadan
+
+
+${name}  ${age} `; 
+
+
+let message = " My name is Damilola and I am a well seasoned freelance"
+
+document.getElementById("Dami").innerHTML = message
+
+
+var X = 9+2;
+document.getElementById('dami').innerHTML = X
+
+
+
+var a = 4;
+var b = 5;
+var  c= 4;
+
+console.log(a);
+
+
+
+
+let isTrue = 3 == 5;
+
+ console.log (isTrue );
+
+
+
+ let schools = [ "primary", "secondary", "university", "master",];
+ 
+ console. log(schools[1])
+
+
+
+
+
+ 
+ let person = { firstname:"John", Age:30, Street:"Mokola,", eyecolor:"blue"}
+
+ console.log(person.firstname);
+
+   ( function()   {  
+
+   
+
+ console.log ( 'This is a function that is immediately called');
+}) ();
+
+ 
+
+let x = 4*17;
+console.log(x);
+
+
+( function (    ) 
+{
+
+let x ='3';
+
+  if ( x>10)
+  console.log ('x is greater than 10');
+
+  else {
+
+    console.log('x is lesser than 10');
+  }
+
+}
+)();
+
+
+
+
+function accountCheck(){     /* Variable function */
+
+  let withdrawAmount = document.getElementById('amount').value;  /*  */
+
+  let accountBalance = 4000;
+
+  if( withdrawAmount > acoountBalance){     /*  Condition statement */
+
+
+    
+    document.getElementById('errormessage').innerHTML= "insufficient  fund"; /* parameter for the condition statment*/
+  }
+
+
+
+
+}
+
+
+function LengthofMS(speed, time) {
+
+var distance = speed * time;
+ return distance;
+
+}
+
+const timeinhours = 30 / 60;
+
+const distance = LengthofMS(240, timeinhours);
+
+
+console.log (` The ditance from Sango to Mokola is ${distance} ` );
+
+//function
+
+
+
+let numbers = [1,2,3,4,5];
+
+numbers.forEach((numbers, index) =>  { console.log(`numbers ${index}: ${numbers} 5`); 
+  
+});
+
+
+//forEach
+
+let foods = ["water melon"]
+foods.forEach((foods, index) => { console.log (foods);
+
+  return false;
+
+ }
+
+);
+
+let fruits = ["mango, apple, cashew, orange, pear, guava,cucumber, pineaple, water melon, coconut"]
+
+fruits.forEach( (fruits, index) => { console.log (fruits);
+
+  return false;
+}
+
+
+
+  );
+
+
+//forEach
+
+
+//switch statement
+
+let day = 7;
+switch(day) {
+  case 1:
+    console.day("Monday");
+    break;
+
+    case 2:
+      console.log("Tuesday");
+      break;
+
+      case 3:
+        console.log("Wednesday");
+        break;
+
+        case 4:
+          console.log("Thursday");
+          break;
+
+          case 5:
+            console.log("Friday");
+            break;
+
+            case 6:
+          console.log("Saturday");
+          break;
+          
+          case 7:
+        console.log("Sunday");
+        break;
+        
+        default:
+          console.log("invalid day");
+        }
+
+
+// Ternary operators
+
+let birthage = 17;
+let status = birthage >= 18? "Adult" : "Minnor";
+console.log(status);
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<div style="width: 80%;
+height: 50%;">
+
+<form action="" style="width: 30%; height: 20%;
+display: flex;
+flex-direction: column; margin: auto;
+gap: 3px;">
+
+<span id="errorMessage">
+
+</span>
+<input type="number"   placeholder="Amount" id="amount" 
+style="height: 50%;">
+
+
+
+<button style="height: 50%;" onclick="accountCheck();" type="submit">
+send
+</button>
+
+</div>
+
+</form>
+
+
+
+
+
+</body>
+</html>

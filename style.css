@@ -1,0 +1,33 @@
+p{
+color: blue;
+}
+
+.donate:hover{
+    background-color: rgb(13, 21, 27);
+    color: beige;
+}
+
+.ig{
+border: solid red 2px;
+height: 30%;
+border-radius:50%;
+background-color: black;
+
+}
+
+
+select
+padding: 5px; width: 68.5%; border-radius: 10px;
+
+
+div {   
+
+padding: 5px; width: 68.5%; border-radius: 10px;  border: 0.5px solid lightgrey;
+
+}
+
+
+
+
+
+

@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <form action="" style="display: flex; flex-direction: column; 
+    width: 60%;
+    margin: auto;
+    height: 80%;">
+
+
+
+
+
+<span id="wrong">  Name:  </span>
+<input type="text" placeholder="name" id="Name" >
+
+<span id="error">  Number:  </span>
+<input type="number" placeholder="phone " id="Number">
+
+
+
+<span id="wrong">  Email:  </span>
+<input type="text"  placeholder="Email" id="Email"> 
+
+
+
+<span id="wrongemail">  Title:  </span>
+<input type="text"  placeholder="Title" id="Title">
+
+
+
+<span id="wrong">  Message:  </span>
+<textarea name="text" id="Message" required="fild the message">  </textarea>
+
+
+
+<button type="button"  id="submit" name="submit"   onclick="formValidate();" 
+style="height: 10%;
+border-radius: 10px;
+padding: 1px 5px;
+background-color: black;
+color: white;"> Submit
+
+</button>
+
+    </form>
+
+
+
+
+    
+
+    <script>
+
+        function formValidate() {  
+           
+
+            let name= document.getElementById ("Name").value;
+
+            let phone= document.getElementById ("Number").value;
+
+            let Email= document.getElementById ("Email").value;
+
+            let Title= document.getElementById ("Title").value;
+
+            let message= document.getElementById ("Message").value;
+
+
+
+            if (name=== ''                             /*condition statment*/
+  )
+
+        { 
+document.getElementById('wrong').innerHTML=('fill Name fields');     /* parameter for the condition statment*/
+
+document.getElementById('wrong').style.color='red';
+           
+        
+        } ;
+       
+
+            if (phone==='')   {      /*condition statment*/
+
+
+document.getElementById('error').innerHTML=('fill Number fields');
+document.getElementById('error').style.color='red';
+
+         } ;
+          
+
+
+
+
+           if (Email==='')      /*condition statment*/
+           { 
+document.getElementById('wrongemail').innerHTML=('fill Email fields');   
+document.getAnimations('wrongemail').style.color='red';
+/* parameter for the condition statment*/
+
+           
+           };
+        
+        // }  else{ return true };
+
+
+
+            if (Title==='') { 
+console.log('fill Title fields');
+
+            return false; 
+        
+        }  else{ return true };
+
+
+
+
+        if (Message==='')
+
+{ 
+console.log('fill Message fields');
+
+ return false; 
+
+}  else;{ return true} ;
+
+
+            
+      
+
+
+
+            
+    }
+
+
+
+    </script>
+
+    
+</body>
+</html>
